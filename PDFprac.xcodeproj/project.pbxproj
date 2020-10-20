@@ -13,6 +13,8 @@
 		0437DE77253C16F600D22F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0437DE75253C16F600D22F4F /* Main.storyboard */; };
 		0437DE79253C16FB00D22F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0437DE78253C16FB00D22F4F /* Assets.xcassets */; };
 		0437DE7C253C16FB00D22F4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0437DE7A253C16FB00D22F4F /* LaunchScreen.storyboard */; };
+		0437DE84253C1D5600D22F4F /* pdfPracFile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0437DE83253C1D5600D22F4F /* pdfPracFile.pdf */; };
+		0437DE86253D795300D22F4F /* PDFDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437DE85253D795300D22F4F /* PDFDraw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0437DE78253C16FB00D22F4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0437DE7B253C16FB00D22F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0437DE7D253C16FB00D22F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0437DE83253C1D5600D22F4F /* pdfPracFile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pdfPracFile.pdf; sourceTree = "<group>"; };
+		0437DE85253D795300D22F4F /* PDFDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDraw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		0437DE6E253C16F600D22F4F /* PDFprac */ = {
 			isa = PBXGroup;
 			children = (
+				0437DE83253C1D5600D22F4F /* pdfPracFile.pdf */,
 				0437DE6F253C16F600D22F4F /* AppDelegate.swift */,
 				0437DE71253C16F600D22F4F /* SceneDelegate.swift */,
 				0437DE73253C16F600D22F4F /* ViewController.swift */,
@@ -63,6 +68,7 @@
 				0437DE78253C16FB00D22F4F /* Assets.xcassets */,
 				0437DE7A253C16FB00D22F4F /* LaunchScreen.storyboard */,
 				0437DE7D253C16FB00D22F4F /* Info.plist */,
+				0437DE85253D795300D22F4F /* PDFDraw.swift */,
 			);
 			path = PDFprac;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				0437DE7C253C16FB00D22F4F /* LaunchScreen.storyboard in Resources */,
 				0437DE79253C16FB00D22F4F /* Assets.xcassets in Resources */,
 				0437DE77253C16F600D22F4F /* Main.storyboard in Resources */,
+				0437DE84253C1D5600D22F4F /* pdfPracFile.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0437DE86253D795300D22F4F /* PDFDraw.swift in Sources */,
 				0437DE74253C16F600D22F4F /* ViewController.swift in Sources */,
 				0437DE70253C16F600D22F4F /* AppDelegate.swift in Sources */,
 				0437DE72253C16F600D22F4F /* SceneDelegate.swift in Sources */,
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

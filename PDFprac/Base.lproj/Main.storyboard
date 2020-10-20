@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,41 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PDFprac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-SX-8LQ" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="796"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-co-wdb" customClass="PDFThumbnailView">
+                                <rect key="frame" x="0.0" y="796" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6nn-co-wdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Pb-sC-Jqa"/>
+                            <constraint firstItem="h3H-SX-8LQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5ll-25-fVK"/>
+                            <constraint firstItem="6nn-co-wdb" firstAttribute="top" secondItem="h3H-SX-8LQ" secondAttribute="bottom" id="8QF-DG-Ld7"/>
+                            <constraint firstItem="h3H-SX-8LQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YBF-Bd-3Bt"/>
+                            <constraint firstItem="6nn-co-wdb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="796" id="gAg-hz-oAs"/>
+                            <constraint firstAttribute="bottom" secondItem="6nn-co-wdb" secondAttribute="bottom" id="gjJ-SP-OxW"/>
+                            <constraint firstItem="6nn-co-wdb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iqh-zZ-nlB"/>
+                            <constraint firstItem="h3H-SX-8LQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nh8-Z7-4CW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pdfThumbnailView" destination="6nn-co-wdb" id="nDN-hz-fih"/>
+                        <outlet property="pdfView" destination="h3H-SX-8LQ" id="KF2-qg-ESD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-309" y="68"/>
         </scene>
     </scenes>
 </document>
